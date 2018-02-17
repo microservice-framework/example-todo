@@ -1,0 +1,34 @@
+{
+  "name": "example-todo",
+  "version": "1.0.0",
+  "description": "Example microservice of todo records",
+  "main": "example-todo.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha  --timeout 15000",
+    "start": "DEBUG=http:log,cluster:* node  --max-old-space-size=48 example-todo.js",
+    "stop": "node kill.js",
+    "status": "node status.js",
+    "jscs": "jscs --fix example-todo.js test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microservice-framework/example-todo.git"
+  },
+  "author": "Gormartsen",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/microservice-framework/example-todo/issues"
+  },
+  "dependencies": {
+    "@microservice-framework/microservice": "^1.3.6",
+    "@microservice-framework/microservice-cluster": "^1.2.2",
+    "@microservice-framework/microservice-router-register": "^1.3.0",
+    "dotenv": "^2.0.0"
+  },
+  "devDependencies": {
+    "@microservice-framework/microservice-client": "^1.3.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
+  },
+  "homepage": "https://github.com/microservice-framework/example-todo#readme"
+}

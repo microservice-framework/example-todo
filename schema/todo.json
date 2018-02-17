@@ -1,0 +1,22 @@
+{
+  "id": "/TodoRecord",
+  "type": "object",
+  "properties": {
+    "title": {
+      "description": "Todo title.",
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "string",
+      "description": "Todo body."
+    },
+    "tags": {
+      "type": "array",
+      "description": "Tags",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
