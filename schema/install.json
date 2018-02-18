@@ -41,7 +41,7 @@
     "self_path": {
       "type": "string",
       "description": "SELF PATH",
-      "default": "record",
+      "default": "todo",
       "required": true
     },
     "self_url": {
@@ -77,7 +77,7 @@
     "scope": {
       "type": "string",
       "description": "Scope",
-      "default": "record",
+      "default": "todo",
       "required": true
     },
     "schema": {
